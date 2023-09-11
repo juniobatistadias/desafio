@@ -13,3 +13,4 @@ elif vogal == "u" :
 
 else :
  print ("consoante")
+ '''hoje'''
