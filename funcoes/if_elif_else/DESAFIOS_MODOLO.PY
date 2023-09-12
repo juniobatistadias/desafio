@@ -68,7 +68,7 @@ print(frutas)
 frutas =  ["maca"," morango", " uva"," abacaxi" ]
 
 for fruta in frutas:
-    print ("eu gosto de "+fruta)'
+    print ("eu gosto de "+fruta)
 #range
 for numeros in range (1,11, 3):
     print(numeros)
@@ -121,4 +121,108 @@ for fruta in  FRUTAS:
     else :
         print("voce e um adulto")
 
-        
+        #tuple
+cidades = ('sao paulo', 'salvador', 'rio de janeiro')
+
+cidade_usuario= input("adivinhe a cidade")
+if cidade_usuario in cidades:
+    print("a cidade esta na lista de cidade")
+else:
+    print("a cidade nao esta na lista de cidade")
+
+    #dicionario
+    cidades = {
+        "brasil": "brasilia",
+        "argentina": "buenos aires",
+        "chile":"santiago",
+        "autralia": "canberra",
+        "canada": "ottawa"    }
+    usuario_pais=input("Digite o nome do pais:")
+
+    if usuario_pais in cidades:
+        print(f"A capiatal de {usuario_pais} e {cidades[usuario_pais]}!")
+    else:
+        print("DESCULPE! nao temos informacoes desse pais!") 
+
+    #sets
+amigos = {"marcos","ana","sophia","arthur","amanda"}
+amigos2= {"jose","arthur","ana","carol","paulo"}
+
+result= amigos.intersection(amigos2)
+print(result)
+
+#or setes
+amigos = {"marcos","ana","sophia","arthur","amanda"}
+amigos2= {"jose","arthur","ana","carol","paulo"}
+
+result= amigos.union(amigos2)
+print(result)
+#or setes
+amigos = {"marcos","ana","sophia","arthur","amanda"}
+amigos2= {"jose","arthur","ana","carol","paulo"}
+
+result= amigos.difference(amigos2)
+print(result)
+
+# funcao
+
+
+def quadrado(numero):
+    return  numero **2
+
+nuemero = int (input("digite um numero: "))
+print(f"o quadrado{numero} e {quadrado(numero)}")
+
+#funcoes 2
+def i (numero, numero2):
+    return numero +numero2
+
+usuario1= int(input("digite um numero:"))
+usuario2= int(input("digite outro  numero:"))
+
+print(f"a soma dos numeros e {i(usuario1 , usuario2)}")
+
+#or
+def i (numero, numero2):
+ result = numero1 + numero2
+ 
+ print(f"a soma dos numeros e {result}")
+ 
+ usuario1= int(input("digite um numero:"))
+usuario2= int(input("digite outro  numero:"))
+
+quadrado (usuario1 , usuario2)
+
+#potenciacao
+def potencia(base, expoente=2):
+    return base ** expoente
+user_number=int(input("digite o numero base: "))
+user_expoente=input("digite um expoente (default 2):")
+
+if user_expoente :
+    print(F'o RESULTADO E : {potencia(user_number ,int (user_expoente))}')
+    
+else:
+    print(f"o resultado e : {potencia(user_number)}")
+
+
+    # fatorial
+ 
+def fatorial(n):
+    if n == 0 or n ==1:
+     return 1
+    else:
+        return n * fatorial(n-1)
+    user_number = int(input("digite um numero: "))
+    print(f"o fatorial de {user_number}e{fatorial(user_number)}")
+    # duas funcoes
+
+    def dobrar (num):
+        return num *2
+    def quadrado(num):
+        return dobrar (num)**2
+    numero = int(input("digite um numero :"))
+    print (f"o quadrado do dobrodo numero  {numero} e { quadrado(numero)}")
+
+    
+
