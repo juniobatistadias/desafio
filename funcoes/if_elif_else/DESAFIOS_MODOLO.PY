@@ -99,9 +99,26 @@ print("loopp com o continue:")
 
 for numero in range (1,11):
 
-    if numero == 5
-    continue
+    if numero == 5:
+      continue
 
 print (numero)
 
 #contador
+FRUTAS = ["maca","banana","maca", "maca","abacate ","uva"]
+contador= 0
+for fruta in  FRUTAS:
+    if fruta =="maca":
+        contador +=1
+    
+    print("existem numero de macas na lista :",contador)
+    #el if
+    age = int (input("digite sua idade:"))
+    if age < 13 :
+        print("voce e uma criaca")
+    elif age >= 13 and age <20:
+        print("voce e um adolecente")
+    else :
+        print("voce e um adulto")
+
+        
