@@ -1,4 +1,4 @@
-'''
+
 #desafio 1
 print("OLA MUNDO PYTHON")
 
@@ -43,16 +43,16 @@ print("o resulta do da divisao e: ",divisao)
 
 exponecial = num**num2
 print("o resulta do da exponecial e: ",exponecial)
-#exercicio de listas'''
+#exercicio de listas
 
-'''frutas =  ["maca"," banana", "manga"," uva" ]
+frutas =  ["maca"," banana", "manga"," uva" ]
 
 frutas[1]= "laranja"
 frutas.insert(2, "onibus")
 print(frutas)
 print(frutas[1])
 print(frutas[0])
-print(frutas[2])'''
+print(frutas[2])
 # desafio 6
 
 frutas =  ["maca"," morango", " uva"," abacaxi" ]
@@ -62,10 +62,46 @@ print(frutas)
 del frutas[-1]
 print(frutas)
 
+
 #lopps desafio
 
 frutas =  ["maca"," morango", " uva"," abacaxi" ]
 
 for fruta in frutas:
-    print ("eu gosto de "+fruta)
-    
+    print ("eu gosto de "+fruta)'
+#range
+for numeros in range (1,11, 3):
+    print(numeros)
+
+#nested for loop
+
+frutas = ["maca","banana","manga"]
+vegetais = ["cenoura","alface","brocolis"]
+
+for frutas in frutas:
+    for vegetal in vegetais:
+        print(fruta , vegetal)
+#while loop
+
+i=1
+while i <=10:
+    i+1
+    print(i)
+
+#   loop com break e continue 
+print("loopp com o break")
+for numero in range(1,11):
+   if numero>5:
+      break
+   print(numero)
+
+print("loopp com o continue:")
+
+for numero in range (1,11):
+
+    if numero == 5
+    continue
+
+print (numero)
+
+#contador
